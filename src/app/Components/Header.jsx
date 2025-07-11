@@ -13,13 +13,19 @@ export default function Header()
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about" className="hover:text-yellow-400">
+                        <Link href="/about" className="ho
+                        ver:text-yellow-400">
                             About
                         </Link>
                     </li>
                     <li>
                         <Link href="/contact" className="hover:text-yellow-400">
                             Contact
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/product" className="hover:text-yellow-400">
+                            Products
                         </Link>
                     </li>
                 </ul>
