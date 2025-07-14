@@ -1,4 +1,4 @@
-import { FaCrown } from "react-icons/fa";
+import { FaCrown, FaShoppingCart } from "react-icons/fa";
 
 export default function Product(props)
 {
@@ -17,10 +17,18 @@ export default function Product(props)
         className="w-32 h-32 object-cover rounded-full mb-4"
       />
       <h2 className="text-xl font-semibold text-gray-800 mb-1">{props.name}</h2>
-      {props.description && (
-        <p className="text-sm text-gray-600 mb-2">{props.description}</p>
-      )}
-      <p className="text-lg font-bold text-indigo-600">{`Rs. ${props.price}`}</p>
+
+      <div className="min-h-[30px]"> {props.description && (
+        <p className="text-sm text-gray-600">{props.description}</p>
+      )}</div>
+
+      <p className=" text-lg font-bold text-indigo-600">{`Rs. ${props.price}`}</p>
+
+      <button className="mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg flex items-center gap-2 transition duration-200">
+        <FaShoppingCart />
+        Add to cart
+      </button>
+
     </div>
   );
 }
