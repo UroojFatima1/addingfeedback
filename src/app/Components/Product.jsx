@@ -1,9 +1,18 @@
+"use client";
 import { FaCrown, FaShoppingCart } from "react-icons/fa";
+import { useState } from "react";
+
 
 export default function Product(props)
 {
+  const [clickCount, setClickCount] = useState(0); 
   const numericPrice = parseInt(props.price.replace(/[^\d]/g, ""));
   console.log(numericPrice);
+
+   const handleClick = () => {
+    setClickCount((prev) => prev + 1);
+  };
+
   return (
     <div className="relative bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
       {numericPrice > 300 && (
@@ -24,11 +33,12 @@ export default function Product(props)
 
       <p className=" text-lg font-bold text-indigo-600">{`Rs. ${props.price}`}</p>
 
-      <button className="mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg flex items-center gap-2 transition duration-200">
+      <button className="mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg flex items-center gap-2 transition duration-200"
+       onClick={handleClick}>
         <FaShoppingCart />
         Add to cart
       </button>
-
+      <p className="text-sm text-gray-500 mt-2">Clicked {clickCount} times</p>
     </div>
   );
 }
