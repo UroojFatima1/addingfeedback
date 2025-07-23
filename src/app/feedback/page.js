@@ -94,12 +94,12 @@ export default function Feedback()
                     className="bg-white rounded-2xl shadow-md p-8"
                 >
                     <h4 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-                        We are happy to hear!
+                        We are happy to hear.
                     </h4>
 
                     {isSubmitted && (
                         <div className="mb-4 text-green-600 font-semibold text-center">
-                            Thanks for giving your valuable feedback!
+                            Thanks for giving your valuable feedback.
                         </div>
                     )}
 

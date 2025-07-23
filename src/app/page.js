@@ -8,7 +8,7 @@ export default function Home()
       <div className="max-w-2xl mx-auto bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-10 rounded-2xl shadow-lg text-center">
         <h1 className="text-4xl font-bold mb-4">Hello! 👋</h1>
         <p className="text-lg font-medium">
-          Welcome to my first Next.js app. I'm excited to start building awesome things!
+          Welcome to my first Next.js app. I'm excited to start building awesome things.
         </p>
       </div>
     </div>
