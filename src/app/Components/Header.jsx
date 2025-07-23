@@ -28,6 +28,11 @@ export default function Header()
                             Products
                         </Link>
                     </li>
+                    <li>
+                        <Link href="/feedback" className="hover:text-yellow-400">
+                            Feedback
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

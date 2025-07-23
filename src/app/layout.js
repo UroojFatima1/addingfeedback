@@ -26,7 +26,7 @@ export default function RootLayout({ children })
         className={`bg-gray-100 min-h-screen flex flex-col ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <marquee>Visit Contact Page For Updated Assignment 6.1</marquee>
+        <marquee>Visit Feedback Page For Updated Assignment 6.2</marquee>
         <main className="flex-grow">
           {children}
         </main>
